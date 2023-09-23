@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.grid-layout {
+    display: grid;
+    background-color: black;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.grid-item {
+    color: white;
+    margin: 10px;
+    height: 100px;
+    background-color: red;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
