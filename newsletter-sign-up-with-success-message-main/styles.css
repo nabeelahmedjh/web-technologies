@@ -7,7 +7,13 @@
     font-family: 'Roboto'; /* Choose a name for your font */
     src: url('./assets/fonts/Roboto-Regular.ttf') format('woff2'),
 
-  }
+}
+
+@font-face {
+    font-family: 'Roboto-bold'; /* Choose a name for your font */
+    src: url('./assets/fonts/Roboto-Bold.ttf') format('woff2'),
+
+}
   
 
 body {
@@ -24,7 +30,7 @@ body {
 .mid-hero-main {
     display: flex;
     background-color: hsl(0, 0%, 100%);
-    padding: 20px 10px;
+    padding: 20px 10px  ;
     border-radius: 25px;
 }
 
@@ -37,8 +43,9 @@ svg {
 }
 
 h1 {
+    font-family: 'Roboto-bold';
     font-size: 3rem;
-    font-weight: bold   ;
+    font-weight: bold;
 }
 
 .left > p {
@@ -60,7 +67,7 @@ li > p {
 }
 
 form {
-    margin: 25px 0;
+    margin: 30px 0;
 }
 
 div > label{
@@ -72,15 +79,90 @@ div > label{
 input[type=email] {
     width: 60%;
     border-radius: 5px;
-    padding: 10px;
+    padding: 14px;
 }
 
 input[type=button] {
-    width: 60%;
-    background-color: hsl(4, 100%, 67%);
-    padding: 10px;
+    width: 67%;
+    background: linear-gradient(to right, hsl(335, 98%, 49%), hsl(4, 100%, 67%));
+    padding: 14px;
     margin: 10px 0;
     border-radius: 5px;
     color: hsl(0, 0%, 100%);
+    font-weight: bold;
+    border: none;
 
+}
+
+input[type=button]:hover {
+    cursor: pointer;
+    box-shadow: 2px 2px 4px rgba(255, 0, 8, 0.908)
+    
+
+}
+
+.mobile-svg {
+    display: none;
+}
+
+
+@media (max-width: 450px) {
+    .desktop-svg {
+        display: none;
+    }
+
+    .mobile-svg {
+        margin: 0;
+        display: block;
+        width: 100%;
+    }
+
+    .mid-hero-main {
+        flex-direction: column;
+        padding: 10px;
+        margin: 0;
+    }
+
+    .right {
+        order: 1;
+        padding: 0;
+        margin: 0;
+    }
+
+    .left {
+        margin: 0;
+        order: 2;
+    }
+
+    li > p {
+        margin-left: 40px;
+        display: inline-block;
+        transform: translateY(-27px);
+    }
+
+    ul > li:nth-child(3) > p {
+        /* Your styles for the third child element here */
+        transform: translateY(-7px);
+        margin-left: 15px;
+    }
+
+    input[type=email] {
+        width: 89%;
+
+    
+    }
+    
+    input[type=button] {
+
+        width: 100%;
+        background: hsl(235, 18%, 26%);
+        box-shadow: none;
+    
+    }
+    input[type=button]:hover {
+        cursor: pointer;
+        box-shadow: 2px 2px 4px hsl(235, 18%, 26%);
+        
+    
+    }
 }
