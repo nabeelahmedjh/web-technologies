@@ -134,6 +134,11 @@ input[type=button]:hover {
         order: 2;
     }
 
+    li {
+        margin: 0px 0;
+        padding: 1px 0;
+    }
+
     li > p {
         margin-left: 40px;
         display: inline-block;
@@ -148,6 +153,7 @@ input[type=button]:hover {
 
     input[type=email] {
         width: 89%;
+        padding: 20px 13px;
 
     
     }
@@ -157,6 +163,7 @@ input[type=button]:hover {
         width: 100%;
         background: hsl(235, 18%, 26%);
         box-shadow: none;
+        padding: 20px 20px;
     
     }
     input[type=button]:hover {
